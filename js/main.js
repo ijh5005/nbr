@@ -3,16 +3,18 @@
 //fadeIn body when the page is loaded
 $(document).ready(() => {
   $('body').css('opacity', 1);
+
+  //position the playList on the home page
+  setTimeout(() => {
+    $('.track[data="5"]').addClass('selectedSong');
+    const songIconOffset = $('#sound').offset().top;
+    const position = $('.selectedSong').offset().top;
+    const scrollSongTo = position - songIconOffset;
+    document.getElementById('playlistSectionHolder').scrollTop = scrollSongTo;
+  }, 1000);
 });
 
-//position the playList on the home page
-setTimeout(() => {
-  $('.track[data="5"]').addClass('selectedSong');
-  const songIconOffset = $('#sound').offset().top;
-  const position = $('.selectedSong').offset().top;
-  const scrollSongTo = position - songIconOffset;
-  document.getElementById('playlistSectionHolder').scrollTop = scrollSongTo;
-}, 100);
+
 
 var app = angular.module('app', []);
 
@@ -319,7 +321,7 @@ app.service('data', function(){
     },
     {
       name: 'Young Ty',
-      img: './img/artistBio/TyKeeL.png',
+      img: './img/artistBio/Ty.png',
       bio: 'Young Ty, aka “TyKeel” is a 13 year old rapper blazing out of Philadelphia and going toe to toe with some of the best. He has been rapping since conception and now he is launching his professional career with No Baggage Records Music Group, LLC. His new single is “Luke Kage.”'
     },
     {
