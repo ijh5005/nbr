@@ -401,21 +401,12 @@ app.service('data', function(){
     },
     {
       section: {
-        friendlyName: "Social Media Team",
-        people: [
-          {name: 'Kwamane Harrison', description: 'Social Media Program Manager'}
-        ]
-      }
-    },
-    {
-      section: {
         friendlyName: "Production Team",
         people: [
           {name: 'B.Arsin', description: 'Producer and Chief Engineer'},
           {name: 'Martin Nwoga', description: 'Production Manager'},
           {name: 'Clarence English', description: 'Producer and Songwriter'},
           {name: 'Chap Smith', description: 'Producer'},
-          {name: 'Kwamane Harrison', description: 'Songwriter'},
           {name: 'Troy "Tk Izrael" Lindsey', description: 'Producer'}
         ]
       }
