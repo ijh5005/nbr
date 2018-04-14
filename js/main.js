@@ -239,13 +239,6 @@ app.service('data', function(){
       secondsInSong: 240,
     },
     {
-      artist: 'KMCB',
-      track: 'KMCB - Shining',
-      songLocation: './music/KMCB Shining.mp3',
-      imgLocation: './img/artistFeature/MistaCashmere.png',
-      secondsInSong: 228,
-    },
-    {
       artist: 'Bahbean',
       track: 'Bahbean - Magic',
       songLocation: './music/Bahbean - Magic.mp3',
@@ -333,11 +326,6 @@ app.service('data', function(){
       name: 'YQ Dreams',
       img: './img/artistBio/YQDreaMs.png',
       bio: 'YQ Dreams, aka “Young Quan” is a rising Hip-Hop Rap Artist with a large following in New Jersey and Philadelphia. YQ has collaborated with producers such as ImASaynt and CMPLX. YQ is taking his career to the next level by working with No Baggage Records Music Group, LLC. His new single is “Changing” featuring the lovely songbird, Nae’Ahmi.'
-    },
-    {
-      name: 'KMCB',
-      img: './img/artistBio/MistaCashmere.png',
-      bio: '( KMCB ) Also known as ( Mista Cashmere ) but his birth name is ( Kwamane R. Harrison ) Started rapping at the age of 7 years old. Born out of North Philadelphia, Kensington Area, he grew to become a Hip Hop Rap Artist that was influenced by his hard life surroundings, he developed a talent that shocked his friends and family members. So he decided to take it to the next level and become what he and everyone around him believed he would be. A Rap Star. Still, to this day, he follows his dreams and won’t give up until he reaches his goals. Just newly signed to No Baggage Records LLC,  he believes this can be his chance at greatness.'
     },
     {
       name: 'QuadS',
