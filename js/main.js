@@ -207,7 +207,7 @@ app.service('data', function(){
       artist: 'TyKeeL',
       track: 'Young Ty - Pop Star',
       songLocation: './music/Young Ty - Pop Star.mp3',
-      imgLocation: './img/artistFeature/TyKeel.png',
+      imgLocation: './img/artistFeature/Ty.png',
       secondsInSong: 171,
     },
     {
