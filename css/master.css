@@ -43,7 +43,7 @@ body {
   left: 16em;
   /* opacity: 0.4; */
   position: absolute;
-  top: 10em;
+  top: 7em;
   transform: scale(2);
 }
 
@@ -506,6 +506,10 @@ body {
 }
 
 /* <!-- STAFF PAGE --> */
+#staffPageTitle p {
+  font-size: 3em;
+}
+
 #staffPage {
   justify-content: flex-end;
 }
@@ -516,13 +520,14 @@ body {
 
 #staffPageLeftSide {
   overflow: scroll;
+  width: 36em;
 }
 
 #staffPageSection {
 }
 
 #staffPageSectionName p {
-  font-size: 2em;
+  font-size: 1.4em;
   font-weight: 400;
   color: #000;
   border-bottom: 0.01em solid var(--darkRed);
@@ -535,9 +540,13 @@ body {
   justify-content: space-between !important;
 }
 
+.staffDescription > div {
+  margin: 1em;
+}
+
 .staffDescription > *:first-child p {
   margin: 0;
-  font-size: 1.6em;
+  font-size: 1em;
 }
 
 .staffDescriptionActive {

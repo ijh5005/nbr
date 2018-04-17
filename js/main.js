@@ -11,7 +11,7 @@ $(document).ready(() => {
     const position = $('.selectedSong').offset().top;
     const scrollSongTo = position - songIconOffset;
     document.getElementById('playlistSectionHolder').scrollTop = scrollSongTo;
-  }, 500);
+  }, 1000);
 });
 
 
@@ -30,7 +30,7 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
   //track if the song is playing
   $rootScope.playMusic = false;
   //the default img that is displayed on the home page
-  $rootScope.featureImg = '';
+  $rootScope.featureImg = './img/artistFeature/WillAmaze.png';
   //current page
   $rootScope.currentPage = 'home';
   //navigation options
@@ -53,6 +53,7 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
 
   $scope.currentArtistIndex = '';
   $scope.staff = data.staff;
+  $scope.staffImg = './img/outline.png';
 
   $scope.toggleMusic = () => {
     //restart song if at the end of the song
@@ -213,6 +214,13 @@ app.service('data', function(){
       secondsInSong: 171,
     },
     {
+      artist: 'KMCB',
+      track: 'KMCB - Shining',
+      songLocation: './music/KMCB Shining.mp3',
+      imgLocation: './img/artistFeature/MistaCashmere.png',
+      secondsInSong: 227,
+    },
+    {
       artist: 'Bahbean',
       track: 'Bahbean - Heartbreak',
       songLocation: './music/Bahbean_Single__Heartbreak.mp3',
@@ -230,7 +238,7 @@ app.service('data', function(){
       artist: 'TyKeeL',
       track: 'Young Ty - Luke Kage',
       songLocation: './music/Young Ty Luke Kage.mp3',
-      imgLocation: './img/artistFeature/TyKeel.png',
+      imgLocation: './img/artistFeature/Ty.png',
       secondsInSong: 216,
     },
     {
@@ -272,7 +280,7 @@ app.service('data', function(){
       artist: 'TyKeeL',
       track: 'Young Ty - Monstar',
       songLocation: './music/Young Ty - Monstar.mp3',
-      imgLocation: './img/artistFeature/TyKeel.png',
+      imgLocation: './img/artistFeature/Ty.png',
       secondsInSong: 143,
     },
     {
@@ -330,6 +338,11 @@ app.service('data', function(){
       bio: 'YQ Dreams, aka “Young Quan” is a rising Hip-Hop Rap Artist with a large following in New Jersey and Philadelphia. YQ has collaborated with producers such as ImASaynt and CMPLX. YQ is taking his career to the next level by working with No Baggage Records Music Group, LLC. His new single is “Changing” featuring the lovely songbird, Nae’Ahmi.'
     },
     {
+      name: 'KMCB',
+      img: './img/artistBio/MistaCashmere.png',
+      bio: 'KMCB, aka Mista Cashmere is a rising star out of Philadelphia. KMCB comes from a talented family and he is true to his family name.  KMCB’s lyrics are influenced by his difficult childhood and are captivating and grabs hold of you.  In addition to writing for his own projects, KMCB is a talented ghostwriter for many.  KMCB was recently signed to Mighty Works Media Music Group, LLC and he is now ready for his chance at greatness.  His new single is “Shining.”'
+    },
+    {
       name: 'QuadS',
       img: './img/artistBio/QuadS.png',
       bio: 'Quads is really a triple threat, he can sing, dance and rap.  He is well known in New Jersey with an increasing following from Philadelphia.  Quads started his musical career performing with his brother Zey who is also a NO Baggage Records artist.'
@@ -351,12 +364,12 @@ app.service('data', function(){
     },
     {
       name: 'Zey',
-      img: './img/artistBio/Zey.png',
+      img: './img/artistBio/outline.png',
       bio: 'Zey is a transcendent Rap and R&B Artist with a native flare to his music. He also produces hypnotic beats and paints a Rembrandt with his prolific lyrics.  Zey started his career performing with his brother Quads, who is also a NO Baggage Records.'
     },
     {
       name: 'Gerry',
-      img: './img/artistBio/Zey.png',
+      img: './img/artistBio/outline.png',
       bio: 'Zey is a transcendent Rap and R&B Artist with a native flare to his music. He also produces hypnotic beats and paints a Rembrandt with his prolific lyrics.  Zey started his career performing with his brother Quads, who is also a NO Baggage Records.'
     },
     {
@@ -393,9 +406,9 @@ app.service('data', function(){
       section: {
         friendlyName: "Administrative Team",
         people: [
-          {name: 'Karima Keel', description: 'Events Coordinator'},
-          {name: 'Tameka Combs', description: 'Events Coordinator'},
-          {name: 'Amanda Ziegenfuss', description: 'Production Assistant'}
+          {name: 'Karima Keel', description: 'Events Coordinator', imgLocation: './img/outline.png'},
+          {name: 'Tameka Combs', description: 'Events Coordinator', imgLocation: './img/outline.png'},
+          {name: 'Amanda Ziegenfuss', description: 'Production Assistant', imgLocation: './img/outline.png'}
         ]
       }
     },
@@ -403,11 +416,11 @@ app.service('data', function(){
       section: {
         friendlyName: "Production Team",
         people: [
-          {name: 'B.Arsin', description: 'Producer and Chief Engineer'},
-          {name: 'Martin Nwoga', description: 'Production Manager'},
-          {name: 'Clarence English', description: 'Producer and Songwriter'},
-          {name: 'Chap Smith', description: 'Producer'},
-          {name: 'Troy "Tk Izrael" Lindsey', description: 'Producer'}
+          {name: 'B.Arsin', description: 'Producer and Chief Engineer', imgLocation: './img/outline.png'},
+          {name: 'Martin Nwoga', description: 'Production Manager', imgLocation: './img/outline.png'},
+          {name: 'Clarence English', description: 'Producer and Songwriter', imgLocation: './img/outline.png'},
+          {name: 'Chap Smith', description: 'Producer', imgLocation: './img/outline.png'},
+          {name: 'Troy "Tk Izrael" Lindsey', description: 'Producer', imgLocation: './img/outline.png'}
         ]
       }
     },
@@ -415,8 +428,8 @@ app.service('data', function(){
       section: {
         friendlyName: "Kingdom Department",
         people: [
-          {name: 'Will Amaze', description: 'Program Manager and Songwriter'},
-          {name: 'Gerry Duperroy', description: 'Producer and Songwriter'}
+          {name: 'Will Amaze', description: 'Program Manager and Songwriter', imgLocation: './img/outline.png'},
+          {name: 'Gerry Duperroy', description: 'Producer and Songwriter', imgLocation: './img/outline.png'}
         ]
       }
     },
@@ -424,7 +437,7 @@ app.service('data', function(){
       section: {
         friendlyName: "Security Staff",
         people: [
-          {name: 'Grimm', description: 'Security'}
+          {name: 'Grimm', description: 'Security', imgLocation: './img/outline.png'}
         ]
       }
     }

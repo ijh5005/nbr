@@ -65,7 +65,8 @@ body {
 }
 
 .top {
-  top: -20rem;transition: top 1s;
+  top: -20rem;
+  transition: top 1s;
 }
 
 .topStaffPage {
@@ -77,9 +78,16 @@ body {
 }
 
 .artistLeft {
-  left: -10em;position: relative;transition: left 0.5s;
+  left: -10em;position: relative;
+  transition: left 0.5s;
 }
 
 .artistRight {
-  left: 10em;position: relative;transition: left 0.5s;
+  left: 10em;position: relative;
+  transition: left 0.5s;
+}
+
+.staffDescription:hover {
+  color: #fff;
+  background-color: var(--darkRed);
 }
