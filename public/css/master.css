@@ -9,9 +9,7 @@ body {
 }
 
 :root {
-  --bigText: #E9F4FC;
   --darkRed: #5B000C;
-  --lightBlue: #4CA6E5;
   --mediumBlue: #0F4368;
   --playBtn: #BCDEF5;
 }
@@ -43,7 +41,7 @@ body {
   left: 16em;
   /* opacity: 0.4; */
   position: absolute;
-  top: 7em;
+  top: 8em;
   transform: scale(2);
 }
 
