@@ -11,7 +11,7 @@ $(document).ready(() => {
     const position = $('.selectedSong').offset().top;
     const scrollSongTo = position - songIconOffset;
     document.getElementById('playlistSectionHolder').scrollTop = scrollSongTo;
-  }, 1000);
+  });
 });
 
 
@@ -69,7 +69,7 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
 
   //set the initial song
   $timeout(() => {
-    const songIndex = 5;
+    const songIndex = 6;
     task.setMusic($rootScope.playList[songIndex], songIndex);
     task.scrollSongInPlace(songIndex);
   }, 1000)
@@ -243,8 +243,8 @@ app.service('data', function(){
     },
     {
       artist: 'YQ Dreams ft Nae\' Ahmi',
-      track: 'YQ Dreams - No Love',
-      songLocation: './music/YQ- Dream Mp3.mp3',
+      track: 'YQ Dreams - Dream',
+      songLocation: './music/YQ - Dream Mp3.mp3',
       imgLocation: './img/artistFeature/YQDreaMs.png',
       secondsInSong: 240,
     },
@@ -330,42 +330,42 @@ app.service('data', function(){
     {
       name: 'Young Ty',
       img: './img/artistBio/Ty.png',
-      bio: 'Young Ty, aka “TyKeel” is a 13 year old rapper blazing out of Philadelphia and going toe to toe with some of the best. He has been rapping since conception and now he is launching his professional career with No Baggage Records Music Group, LLC. His new single is “Luke Kage.”'
+      bio: 'Young Ty, aka “TyKeel” is a 13 year old rapper blazing out of Philadelphia and going toe to toe with some of the best. He has been rapping since conception and now he is launching his professional career with No Baggage Records, LLC. His new single is “Luke Kage.”'
     },
     {
       name: 'YQ Dreams',
       img: './img/artistBio/YQDreaMs.png',
-      bio: 'YQ Dreams, aka “Young Quan” is a rising Hip-Hop Rap Artist with a large following in New Jersey and Philadelphia. YQ has collaborated with producers such as ImASaynt and CMPLX. YQ is taking his career to the next level by working with No Baggage Records Music Group, LLC. His new single is “Changing” featuring the lovely songbird, Nae’Ahmi.'
+      bio: 'YQ Dreams, aka “Young Quan” is a rising Hip-Hop Rap Artist with a large following in New Jersey and Philadelphia. YQ has collaborated with producers such as ImASaynt and CMPLX. YQ is taking his career to the next level by working with No Baggage Records, LLC. His new single is “Changing” featuring the lovely songbird, Nae’Ahmi.'
     },
     {
       name: 'KMCB',
       img: './img/artistBio/MistaCashmere.png',
-      bio: 'KMCB, aka Mista Cashmere is a rising star out of Philadelphia. KMCB comes from a talented family and he is true to his family name.  KMCB’s lyrics are influenced by his difficult childhood and are captivating and grabs hold of you.  In addition to writing for his own projects, KMCB is a talented ghostwriter for many.  KMCB was recently signed to Mighty Works Media Music Group, LLC and he is now ready for his chance at greatness.  His new single is “Shining.”'
+      bio: 'KMCB, aka Mista Cashmere is a rising star out of Philadelphia. KMCB comes from a talented family and he is true to his family name.  KMCB’s lyrics are influenced by his difficult childhood and are captivating and grabs hold of you.  In addition to writing for his own projects, KMCB is a talented ghostwriter for many.  KMCB was recently signed to NO Baggage Records, LLC and he is now ready for his chance at greatness.  His new single is “Shining.”'
     },
     {
       name: 'QuadS',
       img: './img/artistBio/QuadS.png',
-      bio: 'Quads is really a triple threat, he can sing, dance and rap.  He is well known in New Jersey with an increasing following from Philadelphia.  Quads started his musical career performing with his brother Zey who is also a NO Baggage Records artist.'
+      bio: 'Quads is really a triple threat, he can sing, dance and rap.  He is well known in New Jersey with an increasing following from Philadelphia.  Quads started his musical career performing with his brother Zey who is also a NO Baggage Records, LLC artist.'
     },
     {
       name: 'Will Amaze',
       img: './img/artistBio/WillAmaze.png',
-      bio: 'Will Amaze is a seasoned Kingdom Rap Artist and he is leveling up his career with No Baggage Records Music Group, LLC. He is truly an AMAZING artist with remarkable word play and inspirational lyrics (always with a profound message). His new single is “Do It.”'
+      bio: 'Will Amaze is a seasoned Kingdom Rap Artist and he is leveling up his career with No Baggage Records, LLC. He is truly an AMAZING artist with remarkable word play and inspirational lyrics (always with a profound message). His new single is “Do It.”'
     },
     {
       name: 'Nae\'Ahmi',
       img: './img/artistBio/Nae.png',
-      bio: 'Nae’Ahmi is a young ascending star with an angel like voice spiced with an edgy hypnotic sound. She started her career singing in church and now she is launching her professional career with No Baggage Records Music Group, LLC. Her new single is “Creeping.”'
+      bio: 'Nae’Ahmi is a young ascending star with an angel like voice spiced with an edgy hypnotic sound. She started her career singing in church and now she is launching her professional career with No Baggage Records, LLC. Her new single is “Creeping.”'
     },
     {
       name: 'BahBean',
       img: './img/artistBio/bb.png',
-      bio: 'Bahbean is a conscious lyrical Rap Artist and widely known throughout the tristate area of New Jersey, Pennsylvania, Delaware, and worldwide. Bahbean’s musical style is influenced mostly from his hardships and obstacles in life. He was one of the first Artists signed to No Baggage Records Music Group, LLC. His new single is “Magic.”'
+      bio: 'Bahbean is a conscious lyrical Rap Artist and widely known throughout the tristate area of New Jersey, Pennsylvania, Delaware, and worldwide. Bahbean’s musical style is influenced mostly from his hardships and obstacles in life. He was one of the first Artists signed to No Baggage Records, LLC. His new single is “Magic.”'
     },
     {
       name: 'Zey',
       img: './img/artistBio/outline.png',
-      bio: 'Zey is a transcendent Rap and R&B Artist with a native flare to his music. He also produces hypnotic beats and paints a Rembrandt with his prolific lyrics.  Zey started his career performing with his brother Quads, who is also a NO Baggage Records.'
+      bio: 'Zey is a transcendent Rap and R&B Artist with a native flare to his music. He also produces hypnotic beats and paints a Rembrandt with his prolific lyrics.  Zey started his career performing with his brother Quads, who is also a NO Baggage Records, LLC artist.'
     },
     {
       name: 'Gerry',
