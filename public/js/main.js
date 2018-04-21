@@ -246,7 +246,7 @@ app.service('data', function(){
     {
       artist: 'YQ Dreams ft Nae\' Ahmi',
       track: 'YQ Dreams - Dream',
-      songLocation: './music/YQ - Dream Mp3.mp3',
+      songLocation: './music/YQ Dreams featuring Nae\' Ahmi (They Changin)(MASTER).mp3',
       imgLocation: './img/artistFeature/YQDreaMs.png',
       secondsInSong: 240,
     },
