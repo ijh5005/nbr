@@ -54,6 +54,7 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
   $scope.currentArtistIndex = '';
   $scope.staff = data.staff;
   $scope.staffImg = './img/outline.png';
+  $scope.hideLogo = false;
 
   $scope.toggleMusic = () => {
     //restart song if at the end of the song
@@ -83,6 +84,7 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
   }
   //navigate website
   $scope.navigateTo = (page, hasInitiallyLoaded) => {
+    $scope.hideLogo = (page === 'services') ? true : false;
     //return null if already on page
     if((page === $rootScope.currentPage) && !hasInitiallyLoaded){ return null }
     //hide homePage while transitioning if initially loaded

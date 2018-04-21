@@ -269,7 +269,7 @@ body {
   left: -0.4em;
   top: -0.6em;
   position: relative;
-  color: #000;
+  opacity: 0.4;
 }
 
 #playlistSectionHolder {
@@ -347,7 +347,6 @@ body {
 }
 
 #aboutLogoBox {
-  background-color: #fff;
   background-image: url('../img/logo.png');
   background-position: center;
   background-repeat: no-repeat;

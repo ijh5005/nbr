@@ -18,7 +18,7 @@
 
       <!-- NAVIGATION -->
       <div id="topBar" class="flexRow fullWidth">
-        <img src="./img/logoText.png" alt="" class="h70">
+        <img ng-hide='hideLogo' src="./img/logoText.png" alt="" class="h70">
         <div id="logo" class="fullHeight">
 
         </div>
@@ -102,7 +102,7 @@
         <div id="aboutPageBackLayer" class="fullWidth h90">
           <div id="aboutScreen" class="aboutScreen flexRow h90 w80" style={{aboutScreenStyle}}>
             <div id="aboutScreenText" class="flexCol">
-              <div id="aboutLogoBox" class="w30 h30"></div>
+              <!-- <div id="aboutLogoBox" class="w30 h30"></div> -->
               <p id="aboutP" class="w40">It is the mission of No Baggage Records, LLC to provide personalized consulting services and innovative career guidance for both established and developing artists to assist them with cultivating the highest possible level of accomplishment in the ever-evolving music, film and entertainment industries.</p>
               <p>Check bags at the door and fly with us</p>
             </div>
@@ -135,7 +135,8 @@
       <!-- SERVICES PAGE -->
       <div id="servicesPage" class="flexRow fullWidth webPage" style={{servicesPageStyle}}>
         <div id="servicesPageLeftSide" style={{servicesPageLeftSideStyle}} class="servicesPageLeftSide flexCol fullHeight w50">
-          <img class="pageLogo" src="./img/justLogo.png" alt="">
+          <!-- <img class="pageLogo" src="./img/justLogo.png" alt=""> -->
+          <div id="aboutLogoBox" class="w30 h30"></div>
           <p class="w70">We provide customized professional consulting services to our clients in a wide range of music and entertainment disciplines, including but not limited to artist development, strategic marketing, promotion, songwriting, composing, recording, intellectual property, publishing, distribution and merchandising.</p>
           <p class="w70">We educate our clients and ensure they have the tools necessary to protect their interest and assist them with meeting the career challenges and opportunities that  they will encounter on the road to success.</p>
           <p class="w70">No Baggage Records, LLC also provides solutions for corporations and brands looking for successful music integration and activation designed to make their products more accessible and relevant.</p>
