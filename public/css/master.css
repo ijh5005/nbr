@@ -63,10 +63,7 @@ body {
 }
 
 #navigation p.active {
-  /* font-weight: 500; */
-  /* text-decoration: underline; */
-  /* transform: scale(1.4); */
-  background-color: var(--darkRed);
+  background-color: #870012;
   padding: 0.2em 1.2em;
   color: #fff;
 }
@@ -362,7 +359,7 @@ body {
 
 #aboutImg {
   background-color: #bbb;
-  background-image: url('../img/studio2.png');
+  background-image: url('../img/studio2.jpg');
   background-size: cover;
   bottom: 0;
   height: 46em;
@@ -514,15 +511,16 @@ body {
 
 #staffPageSectionName p {
   font-size: 1.4em;
-  font-weight: 400;
+  font-weight: 300;
   color: #000;
-  border-bottom: 0.01em solid var(--darkRed);
+  /* border-bottom: 0.01em solid var(--darkRed); */
   padding: 0.4em;
   margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .staffDescription {
-  height: 6em;
+  height: 4em;
   justify-content: space-between !important;
 }
 

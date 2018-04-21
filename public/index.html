@@ -19,9 +19,7 @@
       <!-- NAVIGATION -->
       <div id="topBar" class="flexRow fullWidth">
         <img ng-hide='hideLogo' src="./img/logoText.png" alt="" class="h70">
-        <div id="logo" class="fullHeight">
-
-        </div>
+        <div id="logo" class="fullHeight"></div>
         <div id="navigation" class="flexRow fullHeight none">
           <p data={{$index}} class="pointer navigationOption" ng-click='navigateTo(navigationOption.name.toLowerCase())' ng-repeat='navigationOption in navigationOptions track by $index'>{{navigationOption.name}}</p>
         </div>
