@@ -6,11 +6,11 @@ $(document).ready(() => {
 
   //position the playList on the home page
   setTimeout(() => {
-    $('.track[data="5"]').addClass('selectedSong');
-    const songIconOffset = $('#sound').offset().top;
-    const position = $('.selectedSong').offset().top;
-    const scrollSongTo = position - songIconOffset;
-    document.getElementById('playlistSectionHolder').scrollTop = scrollSongTo;
+    // $('.track[data="5"]').addClass('selectedSong');
+    // const songIconOffset = $('#sound').offset().top;
+    // const position = $('.selectedSong').offset().top;
+    // const scrollSongTo = position - songIconOffset;
+    // document.getElementById('playlistSectionHolder').scrollTop = scrollSongTo;
   });
 });
 

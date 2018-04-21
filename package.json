@@ -1,11 +1,14 @@
 {
   "name": "backendtemplate",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.9.1",
+    "npm": "5.6.0"
+  },
   "description": "backend template",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
   "author": "Isaia Harrison",
   "license": "ISC",
