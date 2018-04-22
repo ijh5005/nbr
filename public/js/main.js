@@ -183,7 +183,7 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
     task.setMusic(data.playList[info], info);
     $scope.toggleMusic();
     task.scrollSongInPlace(info);
-    const name = data.playList[info]['artist'];
+    const name = data.playList[info]['mainArtist'];
     let index;
     data.artists.map((artist, i) => {
       if(artist['name'] === name){
@@ -259,13 +259,15 @@ app.service('data', function(){
   this.playList = [
     {
       artist: 'Will Amaze',
+      mainArtist: 'Will Amaze',
       track: 'Will Amaze - Shooting Star',
       songLocation: './music/Will Amaze - Shooting Star.mp3',
       imgLocation: './img/artistFeature/resized500h/WillAmaze.png',
       secondsInSong: 269,
     },
     {
-      artist: 'TyKeeL',
+      artist: 'Young Ty',
+      mainArtist: 'Young Ty',
       track: 'Young Ty - Pop Star',
       songLocation: './music/Young Ty - Pop Star.mp3',
       imgLocation: './img/artistFeature/resized500h/Ty.png',
@@ -273,13 +275,15 @@ app.service('data', function(){
     },
     {
       artist: 'KMCB',
+      mainArtist: 'KMCB',
       track: 'KMCB - Shining',
       songLocation: './music/KMCB Shining.mp3',
       imgLocation: './img/artistFeature/resized500h/MistaCashmere.png',
       secondsInSong: 227,
     },
     {
-      artist: 'Bahbean',
+      artist: 'BahBean',
+      mainArtist: 'BahBean',
       track: 'Bahbean - Heartbreak',
       songLocation: './music/Bahbean_Single__Heartbreak.mp3',
       imgLocation: './img/artistFeature/resized500h/bb.png',
@@ -287,20 +291,23 @@ app.service('data', function(){
     },
     {
       artist: 'Will Amaze',
+      mainArtist: 'Will Amaze',
       track: 'Will Amaze - Do It',
       songLocation: './music/Will Amaze - Do It.mp3',
       imgLocation: './img/artistFeature/resized500h/WillAmaze.png',
       secondsInSong: 230,
     },
     {
-      artist: 'TyKeeL',
+      artist: 'Young Ty',
+      mainArtist: 'Young Ty',
       track: 'Young Ty - Luke Kage',
       songLocation: './music/Young Ty Luke Kage.mp3',
       imgLocation: './img/artistFeature/resized500h/Ty.png',
       secondsInSong: 216,
     },
     {
-      artist: 'YQ Dreams ft Nae\' Ahmi',
+      artist: 'YQ Dreams ft Nae\'Ahmi',
+      mainArtist: 'YQ Dreams',
       track: 'YQ Dreams - Dream',
       songLocation: './music/YQ- Dream Mp3.mp3',
       imgLocation: './img/artistFeature/resized500h/YQDreaMs.png',
@@ -308,13 +315,15 @@ app.service('data', function(){
     },
     {
       artist: 'Bahbean',
+      mainArtist: 'BahBean',
       track: 'Bahbean - Magic',
       songLocation: './music/Bahbean - Magic.mp3',
       imgLocation: './img/artistFeature/resized500h/bb.png',
       secondsInSong: 206,
     },
     {
-      artist: 'YQ Dreams ft Nae\' Ahmi',
+      artist: 'YQ Dreams ft Nae\'Ahmi',
+      mainArtist: 'YQ Dreams',
       track: 'YQ Dreams - No Love',
       songLocation: './music/YQ - No Love Master.mp3',
       imgLocation: './img/artistFeature/resized500h/YQDreaMs.png',
@@ -322,28 +331,32 @@ app.service('data', function(){
     },
     {
       artist: 'Nae\'Ahmi',
+      mainArtist: 'Nae\'Ahmi',
       track: 'Nae\'Ahmi - Creepin',
       songLocation: './music/Nae\' Ahmi Creepin.mp3',
       imgLocation: './img/artistFeature/resized500h/Nae.png',
       secondsInSong: 226,
     },
     {
-      artist: 'Bahbean',
+      artist: 'BahBean',
+      mainArtist: 'BahBean',
       track: 'Bahbean - Bad Blood',
       songLocation: './music/Bad Blood Master.mp3',
       imgLocation: './img/artistFeature/resized500h/bb.png',
       secondsInSong: 163,
     },
     {
-      artist: 'TyKeeL',
+      artist: 'Young Ty',
+      mainArtist: 'Young Ty',
       track: 'Young Ty - Monstar',
       songLocation: './music/Young Ty - Monstar.mp3',
       imgLocation: './img/artistFeature/resized500h/Ty.png',
       secondsInSong: 143,
     },
     {
-      artist: 'YQ Dreams ft Nae\' Ahmi',
-      track: 'YQ Dreams ft Nae\' Ahmi - Changing',
+      artist: 'YQ Dreams ft Nae\'Ahmi',
+      mainArtist: 'YQ Dreams',
+      track: 'YQ Dreams ft Nae\'Ahmi - Changing',
       songLocation: './music/YQ Dreams featuring Nae\' Ahmi (They Changin)(MASTER).mp3',
       imgLocation: './img/artistFeature/resized500h/YQDreaMs.png',
       secondsInSong: 269,
