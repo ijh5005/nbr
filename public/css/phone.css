@@ -145,9 +145,10 @@
   font-weight: 100;
 }
 
-.phoneContactSmallText {
+.phoneContactSmallText#buildat a {
   font-size: 2em;
   font-weight: 100;
+  color: #000;
 }
 
 #phoneStaffList {
