@@ -1,0 +1,107 @@
+#phoneContainer {
+  display: none;
+  height: 104vh;
+  width: 100vw;
+  overflow: scroll;
+}
+
+.dark {
+  background-color: var(--darkRed);
+  color: #fff;
+}
+
+.phonePage {
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+  justify-content: flex-start;
+}
+
+.sidePhoneBtn {
+  position: absolute;
+  right: 0;
+  line-height: 0.2;
+  font-size: 4em;
+  background-color: var(--darkRed);
+  color: #fff;
+  padding: 0.5em;
+  top: 20vh;
+  border: 0.01em solid #fff;
+  border-right: none;
+  font-weight: 100;
+  text-align: center;
+}
+
+.phoneTopBar {
+  justify-content: space-between;
+}
+
+.phoneTopBar > p {
+  font-size: 6em;
+  font-weight: 100;
+  margin: 0;
+}
+
+.phoneTopBar > *:first-child {
+  margin-left: 4rem;
+}
+
+.phoneTopBar > *:last-child {
+  margin-right: 4rem;
+}
+
+.bossLadyPhone {
+  border-radius: 50%;
+}
+
+#phoneImg {
+  justify-content: flex-end;
+}
+
+#phoneImg p {
+  font-size: 3em;
+}
+
+#chooseSongBtn {
+  border-top: 0.01em solid var(--darkRed);
+  color: var(--darkRed);
+}
+
+#chooseSongBtn p {
+  font-size: 4em;
+  font-weight: 100;
+}
+
+#phoneAboutText {
+  font-size: 4em;
+  font-weight: 100;
+  text-align: center;
+}
+
+#servicePhone div {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+#servicePhone div p {
+  font-size: 4em;
+  font-weight: 100;
+  margin: 0;
+  line-height: 4;
+}
+
+#phoneContact {
+  font-size: 3em;
+  font-weight: 100;
+}
+
+.phoneContactSmallText {
+  font-size: 2em;
+  font-weight: 100;
+}
+
+#phoneStaffList {
+  overflow: scroll;
+  height: 70em;
+  width: 80%;
+}

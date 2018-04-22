@@ -48,6 +48,10 @@ body {
   z-index: 100;
 }
 
+.smallLogo {
+  display: none;
+}
+
 #navigation {
   position: relative;
   top: -0.4em;
@@ -71,6 +75,7 @@ body {
 /* <!-- HOME PAGE --> */
 #homePage {
   align-items: flex-end;
+  justify-content: flex-start;
 }
 
 #homePage,
@@ -183,10 +188,16 @@ body {
   color: var(--darkRed);
 }
 
-#playlist {
+/* #playlist {
   width: 24vw;
   z-index: 2;
   position: relative;
+} */
+
+#playList {
+  width: 50em;
+  position: absolute;
+  right: 0;
 }
 
 #playlistHolder {
@@ -196,18 +207,16 @@ body {
 
 #audioPlayer {
   height: 20em;
-  left: -50em;
-  position: absolute;
   width: 50em;
   z-index: 4;
 }
 
 #playBtnHolder {
   height: 16em;
-  left: -5em;
   position: relative;
-  top: 17em;
   width: 16em;
+  left: 8em;
+  top: 2em;
 }
 
 #playBtnOutterCircle {
@@ -228,8 +237,8 @@ body {
 
 #sound {
   font-size: 1.2em;
-  left: 39.8em;
-  opacity: 0.2;
+  left: 17.4em;
+  opacity: 0.6;
   position: absolute;
   top: 6.28em;
 }
@@ -249,7 +258,7 @@ body {
   opacity: 0.4;
   position: absolute;
   top: 50%;
-  width: 8.8em;
+  width: 2em;
 }
 
 .playBtn > * {
@@ -264,9 +273,6 @@ body {
 
 .itunesLogo {
   font-size: 8em;
-  left: -0.4em;
-  top: -0.6em;
-  position: relative;
   opacity: 0.4;
 }
 
@@ -275,10 +281,7 @@ body {
   -webkit-box-shadow: 10px 10px 15px -8px rgba(221,221,221,1);
   box-shadow: 10px 10px 15px -8px rgba(221,221,221,1);
   height: 44em;
-  left: -5em;
   overflow: scroll;
-  position: absolute;
-  top: 4em;
   width: 14em;
   z-index: 4;
 }
@@ -482,6 +485,7 @@ body {
 
 /* <!-- STAFF PAGE --> */
 #staffPageTitle p {
+  font-weight: 300;
   font-size: 2em;
 }
 

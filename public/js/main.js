@@ -444,7 +444,7 @@ app.service('task', function($rootScope, $interval, $timeout){
   }
   //lengthens the progression bar on the home page as the music plays
   this.resizeTimer = () => {
-    const fullWidth = 8.8;
+    const fullWidth = 2;
     $rootScope.playingBarWidth = fullWidth * $rootScope.playingPercent + 'em';
   }
   //sets the music to be played on the homepage
