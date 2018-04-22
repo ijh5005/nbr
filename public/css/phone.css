@@ -56,6 +56,18 @@
   justify-content: flex-start;
 }
 
+.phoneTopBetween {
+  justify-content: space-between;
+}
+
+.phoneTopBetween > *:last-child {
+  margin-right: 1em;
+}
+
+.phoneTopBetween > *:first-child {
+  margin-left: 1em;
+}
+
 .phoneTopBar > p {
   font-size: 6em;
   font-weight: 100;
