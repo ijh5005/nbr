@@ -149,6 +149,7 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
   $scope.view;
   $scope.artistPhoneImg = '';
   $scope.artistPhoneName = '';
+  $scope.artistPhoneBio = '';
   $rootScope.artist = data.artists;
   $scope.toggleOptions = (btnUse) => {
     $scope.chooseOptionScreen(btnUse);
@@ -164,12 +165,9 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
         $scope.phoneList = data.playList;
       } else if (btnUse === 'about'){
         $scope.phoneList = data.playList;
+        $scope.setArtistBio();
       } else if (btnUse === 'artist'){
         $scope.phoneList = data.artists;
-      } else if (btnUse === 'services'){
-        $scope.phoneList = data.playList;
-      }  else if (btnUse === 'contact'){
-        $scope.phoneList = data.playList;
       }
     })
   }
@@ -193,6 +191,15 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
     $scope.artistPhoneName = data.artists[index]['name'];
     $scope.artistPhoneImg = data.artists[index]['img'];
     $scope.toggleOptions('close');
+  }
+  $scope.setArtistBio = () => {
+    let index;
+    data.artists.map((artist, i) => {
+      if(artist['name'] === $scope.artistPhoneName){
+        index = i;
+      }
+    })
+    $scope.artistPhoneBio = data.artists[index]['bio'];
   }
   $timeout(() => {
     $scope.chooseArtist(2);
