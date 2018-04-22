@@ -3,10 +3,11 @@
   height: 104vh;
   width: 100vw;
   overflow: scroll;
+  background-color: #fff;
 }
 
 .dark {
-  background-color: var(--darkRed);
+  background: radial-gradient(#D1001B, #870012);
   color: #fff;
 }
 
@@ -17,19 +18,25 @@
   justify-content: flex-start;
 }
 
-.sidePhoneBtn {
+.sidePhoneBtn,
+.sidePhoneBtn2 {
   position: absolute;
   right: 0;
   line-height: 0.2;
   font-size: 4em;
   background-color: var(--darkRed);
+  background-color: #870012;
   color: #fff;
   padding: 0.5em;
-  top: 20vh;
+  top: 16vh;
   border: 0.01em solid #fff;
   border-right: none;
   font-weight: 100;
   text-align: center;
+}
+
+.sidePhoneBtn2 {
+  top: 46vh;
 }
 
 .phoneTopBar {
@@ -56,6 +63,15 @@
 
 #phoneImg {
   justify-content: flex-end;
+  position: relative;
+}
+
+#phoneImg #audioPlayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80%;
 }
 
 #phoneImg p {
@@ -105,3 +121,49 @@
   height: 70em;
   width: 80%;
 }
+
+#phoneOptionScreen {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+#xBtn {
+  justify-content: flex-end;
+}
+
+#xBtn > * {
+  margin-right: 1em;
+  font-size: 8em;
+  color: #fff;
+}
+
+#text,
+#phoneList {
+  font-size: 4em;
+  text-align: center;
+  color: #fff;
+  overflow: scroll;
+  height: 20em;
+}
+
+#phoneList p {
+  color: #fff;
+}
+
+#phonePage1 > .sidePhoneBtn,
+#phonePage1 > .sidePhoneBtn2 {
+  z-index: 10;
+}
+
+#phoneImg #audioPlayer #playBtnHolder .playBtn::after {
+  height: 0.0;
+  width: 0;
+}
+
+/* #phoneImg #audioPlayer #playBtnHolder */

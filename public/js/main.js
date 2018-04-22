@@ -141,6 +141,62 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
     $('#navigation').removeClass('none');
   })
   task.setArtistImgs(data.artists);
+
+  //PHONE FUNCTIONALITY
+  $scope.phoneList;
+  $scope.showOptions = true;
+  $scope.optionsZindex = -1;
+  $scope.view;
+  $scope.artistPhoneImg = '';
+  $scope.artistPhoneName = '';
+  $rootScope.artist = data.artists;
+  $scope.toggleOptions = (btnUse) => {
+    $scope.chooseOptionScreen(btnUse);
+    $scope.optionsZindex = ($scope.showOptions) ? -1 : 20;
+    $scope.showOptions = !$scope.showOptions;
+    $('#phoneOptionScreen').css('zIndex', $scope.optionsZindex);
+  }
+  $scope.chooseOptionScreen = (btnUse) => {
+    if(btnUse === 'close') null;
+    $scope.view = btnUse;;
+    $timeout(() => {
+      if(btnUse === 'song'){
+        $scope.phoneList = data.playList;
+      } else if (btnUse === 'about'){
+        $scope.phoneList = data.playList;
+      } else if (btnUse === 'artist'){
+        $scope.phoneList = data.artists;
+      } else if (btnUse === 'services'){
+        $scope.phoneList = data.playList;
+      }  else if (btnUse === 'contact'){
+        $scope.phoneList = data.playList;
+      }
+    })
+  }
+  $scope.chooseArtist = (index) => {
+    $scope.artistPhoneName = data.artists[index]['name'];
+    $scope.artistPhoneImg = data.artists[index]['img'];
+    $scope.toggleOptions('close');
+  }
+  $scope.playSongFromPhone = (info) => {
+    ($rootScope.playMusic) ? $scope.toggleMusic() : null;
+    task.setMusic(data.playList[info], info);
+    $scope.toggleMusic();
+    task.scrollSongInPlace(info);
+    const name = data.playList[info]['artist'];
+    let index;
+    data.artists.map((artist, i) => {
+      if(artist['name'] === name){
+        index = i;
+      }
+    })
+    $scope.artistPhoneName = data.artists[index]['name'];
+    $scope.artistPhoneImg = data.artists[index]['img'];
+    $scope.toggleOptions('close');
+  }
+  $timeout(() => {
+    $scope.chooseArtist(2);
+  }, 10);
 }]);
 
 app.service('animation', function($rootScope, $interval, $timeout, data, task){

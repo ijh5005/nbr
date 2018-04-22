@@ -228,18 +228,51 @@
     </div> <!-- end: CONTAINER -->
 
     <div id="phoneContainer" class="">
+      <div id="phoneOptionScreen" class="flexCol">
+        <div id="xBtn" class="fullWidth h15 flexRow">
+          <div ng-click='toggleOptions("close")'  class="">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div id="phoneOptionScreenBody" class="fullWidth h85">
+          <div ng-if='view === "about" || view === "services" || view === "contact"' id="text" class="">
+            <p ng-if='view === "about"'>It is the mission of No Baggage Records, LLC to provide personalized consulting services and innovative career guidance for both established and developing artists to assist them with cultivating the highest possible level of accomplishment in the ever-evolving music, film and entertainment industries.</p>
+            <p ng-if='view === "services"'>We provide customized professional consulting services to our clients in a wide range of music and entertainment disciplines, including but not limited to artist development, strategic marketing, promotion, songwriting, composing, recording, intellectual property, publishing, distribution and merchandising.</p>
+            <p ng-if='view === "services"'>We educate our clients and ensure they have the tools necessary to protect their interest and assist them with meeting the career challenges and opportunities that  they will encounter on the road to success.</p>
+            <p ng-if='view === "services"'>No Baggage Records, LLC also provides solutions for corporations and brands looking for successful music integration and activation designed to make their products more accessible and relevant.</p>
+            <p ng-if='view === "contact"'>For more information on session pricing for our South Jersey Music Studio, music consultation, original instrumentals and beats, mixing and mastering sessions, listening sessions, and all other inquiries, please email us using the form to the right.</p>
+          </div>
+          <div id="phoneList" class="">
+            <p ng-if='view === "song"' data={{$index}} ng-click='playSongFromPhone($index)' class="track pointer" ng-repeat='playListSong in phoneList track by $index'>{{playListSong.track}}</p>
+            <p ng-if='view === "artist"' data={{$index}} ng-click='chooseArtist($index)' class="track pointer" ng-repeat='playListSong in phoneList track by $index'>{{playListSong.name}}</p>
+          </div>
+        </div>
+      </div>
       <!-- PAGE1 -->
       <div id="phonePage1" class="phonePage flexCol">
-        <div class="sidePhoneBtn"><p>A</p><p>B</p><p>O</p><p>U</p><p>T</p></div>
+        <div class="sidePhoneBtn" ng-click='toggleOptions("about")'><p>A</p><p>B</p><p>O</p><p>U</p><p>T</p></div>
+        <div class="sidePhoneBtn2" ng-click='toggleOptions("artist")'><p>A</p><p>R</p><p>T</p><p>I</p><p>S</p><p>T</p><p>S</p></div>
         <div class="phoneTopBar flexRow fullWidth h15 flexRow">
           <img src="./img/logoText.png" class="h50" alt="">
           <img src="./img/artistFeature/bossLady.png" class="fullHeight bossLadyPhone" alt="">
         </div>
         <div id="phoneImg" class="h70 fullWidth flexCol">
-          <p>YQDream</p>
-          <img src="./img/artistBio/YQDreaMs.png" class="h80" alt="">
+          <p>{{artistPhoneName}}</p>
+          <img src={{artistPhoneImg}} class="h80" alt="">
+          <div id="audioPlayer" class="flexRow">
+            <div id="playBtnHolder" class="flexRow fullHeight">
+              <div id="playBtnOutterCircle" class="fullSize"></div>
+              <div id="playBtnInnerCircle" class="w70 h70"></div>
+              <div id="playBtn" ng-click='toggleMusic()' ng-if='playMusic === false' class="phonePlayBtn flexRow w55 h55">
+                <i class="fas fa-play"></i>
+              </div>
+              <div ng-click='toggleMusic()' ng-if='playMusic === true' class="phonePlayBtn flexRow w55 h55">
+                <i class="fas fa-pause"></i>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="chooseSongBtn" class="h15 fullWidth flexRow">
+        <div id="chooseSongBtn" ng-click='toggleOptions("song")' class="h15 fullWidth flexRow">
           <p>CHOOSE SONG</p>
         </div>
       </div>
@@ -255,7 +288,7 @@
       </div>
       <!-- PAGE3 -->
       <div id="phonePage3" class="phonePage flexCol">
-        <div class="sidePhoneBtn"><p>D</p><p>E</p><p>T</p><p>A</p><p>I</p><p>L</p><p>S</p></div>
+        <div class="sidePhoneBtn" ng-click='toggleOptions("services")'><p>D</p><p>E</p><p>T</p><p>A</p><p>I</p><p>L</p><p>S</p></div>
         <div class="phoneTopBar flexRow fullWidth h15">
           <img src="./img/logo.png" class="h50" alt="">
           <p>SERVICES</p>
@@ -268,7 +301,7 @@
       </div>
       <!-- PAGE4 -->
       <div id="phonePage4" class="phonePage flexCol dark">
-        <div class="sidePhoneBtn"><p>D</p><p>E</p><p>T</p><p>A</p><p>I</p><p>L</p><p>S</p></div>
+        <div class="sidePhoneBtn" ng-click='toggleOptions("contact")'><p>D</p><p>E</p><p>T</p><p>A</p><p>I</p><p>L</p><p>S</p></div>
         <div class="phoneTopBar flexRow fullWidth h15">
           <img src="./img/logo.png" class="h50" alt="">
           <p>CONTACT</p>

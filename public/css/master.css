@@ -243,7 +243,8 @@ body {
   top: 6.28em;
 }
 
-.playBtn {
+.playBtn,
+.phonePlayBtn {
   background-color: var(--darkRed);
   border-radius: 50%;
   font-size: 4em;
@@ -261,7 +262,8 @@ body {
   width: 2em;
 }
 
-.playBtn > * {
+.playBtn > *,
+.phonePlayBtn > * {
   color: #fff;
   opacity: 0.4;
 }
