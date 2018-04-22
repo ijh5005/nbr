@@ -250,11 +250,17 @@
       </div>
       <!-- PAGE1 -->
       <div id="phonePage1" class="phonePage flexCol">
-        <div class="sidePhoneBtn" ng-click='toggleOptions("about")'><p>A</p><p>B</p><p>O</p><p>U</p><p>T</p></div>
-        <div class="sidePhoneBtn2" ng-click='toggleOptions("artist")'><p>A</p><p>R</p><p>T</p><p>I</p><p>S</p><p>T</p><p>S</p></div>
+        <div class="sidePhoneBtnContainer flexCol">
+          <div class="fullWidth" ng-click='toggleOptions("about")'><p>A</p><p>B</p><p>O</p><p>U</p><p>T</p></div>
+          <div class="fullWidth" ng-click='toggleOptions("artist")'><p>A</p><p>R</p><p>T</p><p>I</p><p>S</p><p>T</p><p>S</p></div>
+        </div>
+
         <div class="phoneTopBar flexRow fullWidth h15 flexRow">
           <img src="./img/logoText.png" class="h50" alt="">
-          <img src="./img/artistFeature/bossLady.png" class="fullHeight bossLadyPhone" alt="">
+          <div class="fullHeight">
+            <img src="./img/artistFeature/bossLady.png" class="fullHeight bossLadyPhone" alt="">
+            <p>Telissa K. Lindsey, Owner and CEO</p>
+          </div>
         </div>
         <div id="phoneImg" class="h70 fullWidth flexCol">
           <p>{{artistPhoneName}}</p>
