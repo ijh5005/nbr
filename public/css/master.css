@@ -111,6 +111,7 @@ body {
 
 #homeIntro {
   align-items: flex-start;
+  justify-content: flex-start;
 }
 
 #homeIntroImg {
@@ -118,19 +119,24 @@ body {
 }
 
 #homeIntroImg img {
-  border-radius: 40%;
+  /* border-radius: 40%; */
 }
 
 #homeIntroImg p {
-  font-weight: 600;
+  font-weight: 300;
   color: #000;
   margin: 0;
 }
 
+#missionSection {
+  width: 20em;
+}
+
 #homeIntro > div > p#mission {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.4em;
   color: #000;
+  width: 11em;
 }
 
 #homeIntro > p {
@@ -251,7 +257,7 @@ body {
   position: absolute;
 }
 
-.playBtn::after {
+/* .playBtn::after {
   background-color: #000;
   content: '';
   height: 0.08em;
@@ -260,7 +266,7 @@ body {
   position: absolute;
   top: 50%;
   width: 2em;
-}
+} */
 
 .playBtn > *,
 .phonePlayBtn > * {

@@ -30,16 +30,16 @@
       <!-- HOME PAGE -->
       <div id="homePage" class="fullWidth flexRow webPage fade" style={{homePageStyle}}>
         <div id="homePageRightSide" class="fullHeight flexCol">
-          <div id="homeIntro" class="h35 fullWidth flexRow">
+          <div id="homeIntro" class="h15 fullWidth flexRow">
             <div id="homeIntroImg" class="flexCol fullHeight">
               <img class="h90" src="./img/artistFeature/bossLady.png" alt="">
               <p>Telissa K. Lindsey, Owner and CEO</p>
             </div>
-            <div class="flexCol fullHeight w60">
+            <div id="missionSection" class="flexCol fullHeight w60">
               <p id="mission">"My goal is simple..to make good music with good people"</p>
             </div>
           </div>
-          <div id="featuredArtist" class="h50 featuredArtist" style={{featuredArtistStyle}}>
+          <div id="featuredArtist" class="h70 featuredArtist" style={{featuredArtistStyle}}>
             <div id="featuredArtistImg" class="fullWidth">
               <img class="fullHeight" src={{featureImg}} alt="">
             </div>
@@ -56,7 +56,7 @@
               <div id="playBtnHolder" class="flexRow fullHeight">
                 <div id="playBtnOutterCircle" class="fullSize"></div>
                 <div id="playBtnInnerCircle" class="w70 h70"></div>
-                <i id="sound" class="fas fa-volume-up"></i>
+                <i id="sound" style="opacity: 0" class="fas fa-volume-up"></i>
                 <div id="playBtn" ng-click='toggleMusic()' ng-if='playMusic === false' class="playBtn flexRow w55 h55">
                   <i class="fas fa-play"></i>
                 </div>
@@ -366,7 +366,7 @@
 
     <style media="screen">
 
-      .playBtn::before {
+      /* .playBtn::before {
         position: absolute;
         content: '';
         background-color: #fff;
@@ -375,7 +375,7 @@
         left: 100%;
         top: 50%;
         width: {{playingBarWidth}};
-      }
+      } */
 
     </style>
 
