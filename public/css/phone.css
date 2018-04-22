@@ -23,29 +23,10 @@
   right: 0;
   line-height: 0.2;
   font-size: 4em;
-  background-color: #870012;
+  background-color: #b30018;
   color: #fff;
   padding: 0.5em;
   top: 16vh;
-  border: 0.01em solid #fff;
-  border-right: none;
-  font-weight: 100;
-  text-align: center;
-}
-
-.sidePhoneBtnContainer {
-  position: absolute;
-  font-size: 4em;
-  color: #fff;
-  right: 0.25em;
-  top: 10vh;
-  z-index: 18;
-}
-
-.sidePhoneBtnContainer > * {
-  line-height: 0.2;
-  background-color: #870012;
-  padding: 1rem;
   border: 0.01em solid #fff;
   border-right: none;
   font-weight: 100;
@@ -85,7 +66,7 @@
 }
 
 #phoneImg {
-  justify-content: flex-end;
+  align-items: flex-end;
   position: relative;
 }
 
@@ -97,8 +78,38 @@
   width: 80%;
 }
 
+#bossLadyBox {
+  justify-content: space-between;
+}
+
+#bossLadyBox p {
+  width: 16em;
+  margin: 0;
+}
+
 #phoneImg p {
   font-size: 3em;
+}
+
+#artistPhoneSide {
+  justify-content: flex-end;
+}
+
+#page1Sidebtns {
+  justify-content: flex-end;
+}
+
+#page1Sidebtns > div {
+  text-align: center;
+  background-color: #b30018;
+  color: #fff;
+  border: 0.01em solid #fff;
+  border-right: none;
+}
+
+#page1Sidebtns > div > p {
+  line-height: 1.2;
+  margin: 0;
 }
 
 #chooseSongBtn {

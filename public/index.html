@@ -250,21 +250,26 @@
       </div>
       <!-- PAGE1 -->
       <div id="phonePage1" class="phonePage flexCol">
-        <div class="sidePhoneBtnContainer flexCol">
-          <div class="fullWidth" ng-click='toggleOptions("about")'><p>A</p><p>B</p><p>O</p><p>U</p><p>T</p></div>
-          <div class="fullWidth" ng-click='toggleOptions("artist")'><p>A</p><p>R</p><p>T</p><p>I</p><p>S</p><p>T</p><p>S</p></div>
-        </div>
-
         <div class="phoneTopBar flexRow fullWidth h15 flexRow">
-          <img src="./img/logoText.png" class="h50" alt="">
-          <div class="fullHeight">
+          <img src="./img/logoText.png" class="h50 w50" alt="">
+          <div id="bossLadyBox" class="fullHeight flexCol w50">
             <img src="./img/artistFeature/bossLady.png" class="fullHeight bossLadyPhone" alt="">
             <p>Telissa K. Lindsey, Owner and CEO</p>
+            <p >"My goal is simple..to make good music with good people"</p>
           </div>
         </div>
-        <div id="phoneImg" class="h70 fullWidth flexCol">
-          <p>{{artistPhoneName}}</p>
-          <img src={{artistPhoneImg}} class="h80" alt="">
+        <div id="phoneImg" class="h70 fullWidth flexRow">
+
+          <div id="artistPhoneSide" class="fullHeight w85 flexCol">
+            <p>{{artistPhoneName}}</p>
+            <img src={{artistPhoneImg}} class="h80" alt="">
+          </div>
+
+          <div id="page1Sidebtns" class="h90 w15 show flexCol">
+            <div class="fullWidth h50 flexCol" ng-click='toggleOptions("about")'><p>B</p><p>I</p><p>O</p></div>
+            <div class="fullWidth h50 flexCol" ng-click='toggleOptions("artist")'><p>A</p><p>R</p><p>T</p><p>I</p><p>S</p><p>T</p><p>S</p></div>
+          </div>
+
           <div id="audioPlayer" class="flexRow">
             <div id="playBtnHolder" class="flexRow fullHeight">
               <div id="playBtnOutterCircle" class="fullSize"></div>
@@ -277,6 +282,7 @@
               </div>
             </div>
           </div>
+
         </div>
         <div id="chooseSongBtn" ng-click='toggleOptions("song")' class="h15 fullWidth flexRow">
           <p>CHOOSE SONG</p>
@@ -286,7 +292,7 @@
       <div id="phonePage2" class="phonePage flexCol dark">
         <div class="phoneTopBar phoneTopBetween flexRow fullWidth h15">
           <img src="./img/logo.png" class="h50" alt="">
-          <p>ABOUT</p>
+          <p>ABOUT US</p>
         </div>
         <div id="phoneAboutText" class="flexRow h85">
           <p>It is the mission of No Baggage Records, LLC to provide personalized consulting services and innovative career guidance for both established and developing artists to assist them with cultivating the highest possible level of accomplishment in the ever-evolving music, film and entertainment industries.</p>
@@ -305,8 +311,34 @@
           </div>
         </div>
       </div>
+      <!-- PAGE5 -->
+      <div id="phonePage5" class="phonePage flexCol dark">
+        <div class="phoneTopBar phoneTopBetween flexRow fullWidth h15">
+          <img src="./img/logo.png" class="h50" alt="">
+          <p>STAFF</p>
+        </div>
+        <div id="phoneStaffList" class="h85">
+          <div id="staffPageTitle" class="flexRow">
+            <p style="font-size: 4em;">NBR Family</p>
+          </div>
+
+          <div id="staffPageSection" class=""  ng-click='' ng-repeat='staffMemberObj in staff track by $index'>
+            <div id="staffPageSectionName" class="fullWidth" style="font-size: 3em">
+              <p>{{staffMemberObj.section.friendlyName}}</p>
+            </div>
+            <div id="" class="staffDescription fullWidth flexRow" ng-repeat='staffMember in staffMemberObj.section.people track by $index'>
+              <div class="">
+                <p style="font-size: 2em; font-weight: 100;">{{staffMember.name}}</p>
+              </div>
+              <div class="">
+                <p style="font-size: 2em; font-weight: 100;">{{staffMember.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- PAGE4 -->
-      <div id="phonePage4" class="phonePage flexCol dark">
+      <div id="phonePage4" class="phonePage flexCol">
         <div class="sidePhoneBtn" ng-click='toggleOptions("contact")'><p>D</p><p>E</p><p>T</p><p>A</p><p>I</p><p>L</p><p>S</p></div>
         <div class="phoneTopBar phoneTopBetween flexRow fullWidth h15">
           <img src="./img/logo.png" class="h50" alt="">
@@ -338,32 +370,7 @@
           <p id="copywrite" class="phoneContactSmallText">&copy; 2017 by No Baggage Records, LLC</p>
         </div>
       </div>
-      <!-- PAGE5 -->
-      <div id="phonePage5" class="phonePage flexCol">
-        <div class="phoneTopBar phoneTopBetween flexRow fullWidth h15">
-          <img src="./img/logo.png" class="h50" alt="">
-          <p>STAFF</p>
-        </div>
-        <div id="phoneStaffList" class="h85">
-          <div id="staffPageTitle" class="flexRow">
-            <p style="font-size: 4em;">NBR Family</p>
-          </div>
 
-          <div id="staffPageSection" class=""  ng-click='' ng-repeat='staffMemberObj in staff track by $index'>
-            <div id="staffPageSectionName" class="fullWidth" style="font-size: 3em">
-              <p>{{staffMemberObj.section.friendlyName}}</p>
-            </div>
-            <div id="" class="staffDescription fullWidth flexRow" ng-repeat='staffMember in staffMemberObj.section.people track by $index'>
-              <div class="">
-                <p style="font-size: 2em; font-weight: 100;">{{staffMember.name}}</p>
-              </div>
-              <div class="">
-                <p style="font-size: 2em; font-weight: 100;">{{staffMember.description}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
