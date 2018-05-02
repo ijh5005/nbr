@@ -627,3 +627,10 @@ body {
   margin-top: 4em;
   opacity: 0.4;
 }
+
+/* <!-- EVENT PAGE --> */
+#flyer {
+  height: 40em;
+  width: 30em;
+  color: #FFF;
+}

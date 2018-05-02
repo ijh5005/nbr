@@ -8,6 +8,7 @@ body {
 #aboutPage,
 #artistPage,
 #staffPage,
+#eventsPage,
 #servicesPageRightSide,
 #contactPageLeftSide {
   transition: opacity 0.5s;

@@ -396,6 +396,9 @@ app.service('data', function(){
     ],
     staff: [
       { $rootScopeSelector: 'staffPageStyle', animation: 'opacity: 0;transition: opacity 0.5s;'}
+    ],
+    events: [
+      { $rootScopeSelector: 'eventsPageStyle', animation: 'opacity: 0;transition: opacity 0.5s;'}
     ]
   }
   this.artists = [
@@ -451,8 +454,9 @@ app.service('data', function(){
     {index: 1, selector: '#aboutPage', name: 'ABOUT'},
     {index: 2, selector: '#artistPage', name: 'ARTIST'},
     {index: 3, selector: '#servicesPage', name: 'SERVICES'},
-    {index: 4, selector: '#contactPage', name: 'CONTACT'},
-    {index: 5, selector: '#staffPage', name: 'STAFF'}
+    {index: 4, selector: '#staffPage', name: 'STAFF'},
+    {index: 5, selector: '#staffPage', name: 'EVENTS'},
+    {index: 6, selector: '#contactPage', name: 'CONTACT'}
   ]
   this.services = [
     'Artist Development',
