@@ -517,14 +517,13 @@ app.service('data', function(){
     }
   ]
   this.staffImgs = [
+    './img/staff/8.jpg',
+    './img/staff/9.jpg',
     './img/staff/1.jpg',
     './img/staff/2.jpg',
     './img/staff/3.jpg',
     './img/staff/4.jpg',
     './img/staff/5.jpg',
-    './img/staff/6.jpg',
-    './img/staff/8.jpg',
-    './img/staff/9.jpg',
   ]
 });
 

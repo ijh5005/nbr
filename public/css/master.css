@@ -510,11 +510,13 @@ body {
   width: 36em;
 }
 
-#staffPageLeftSide::-webkit-scrollbar {
+#staffPageLeftSide::-webkit-scrollbar,
+#staffPageRightSide::-webkit-scrollbar {
     width: 0.4em;
 }
 
-#staffPageLeftSide::-webkit-scrollbar-thumb {
+#staffPageLeftSide::-webkit-scrollbar-thumb,
+#staffPageRightSide::-webkit-scrollbar-thumb {
     background: #000
 }​
 
@@ -557,14 +559,13 @@ body {
 .staffPageImg {
   height: 28em;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 1em auto;
   text-align: center;
 }
 
 .staffPageImg img {
-  height: 100%;
-  margin: 1em;
-  max
+  max-height: 100%;
+  max-width: 80%;
 }
 
 
@@ -650,4 +651,8 @@ body {
   height: 40em;
   width: 30em;
   color: #FFF;
+}
+
+#eventsPageImg {
+  width: 40em;
 }
