@@ -519,7 +519,7 @@ app.service('data', function(){
   this.staffImgs = [
     './img/staff/8.jpg',
     './img/staff/9.jpg',
-    './img/staff/one.jpg',
+    './img/staff/1.png',
     './img/staff/2.jpg',
     './img/staff/3.jpg',
     './img/staff/4.jpg',
