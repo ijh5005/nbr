@@ -129,6 +129,8 @@ app.controller('ctrl', ['$rootScope', '$scope', '$interval', '$timeout', 'animat
   //slideshow methods
   $scope.artists = data.artists;
   $scope.currentArtist = data.artists[6];
+  //staff page images
+  $scope.staffImgs = data.staffImgs;
   $scope.moveSlider = (index) => {
     $scope.currentArtistIndex = index;
     $scope.currentArtist = data.artists[index];
@@ -513,6 +515,16 @@ app.service('data', function(){
         ]
       }
     }
+  ]
+  this.staffImgs = [
+    './img/staff/1.jpg',
+    './img/staff/2.jpg',
+    './img/staff/3.jpg',
+    './img/staff/4.jpg',
+    './img/staff/5.jpg',
+    './img/staff/6.jpg',
+    './img/staff/8.jpg',
+    './img/staff/9.jpg',
   ]
 });
 

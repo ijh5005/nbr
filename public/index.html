@@ -216,10 +216,9 @@
 
           </div>
 
-          <div id="staffPageRightSide" class="flexRow fullHeight w50">
-            <div id="staffPageImg" class="h80">
-              <p>Coming Soon…</p>
-              <img class="fullHeight" src={{staffImg}} alt="">
+          <div id="staffPageRightSide" class="fullHeight w50">
+            <div class="staffPageImg" class="h80" ng-repeat='staff in staffImgs track by $index'>
+              <img class="" src={{staff}} alt="">
             </div>
           </div>
 
@@ -232,12 +231,12 @@
         <div id="" class="flexRow h85 w80">
 
           <div class="w50 fullHeight flexCol">
-            <div id="flyer" class="show flexCol">
-              EVENT TBD
+            <div id="flyer" class=" flexCol">
+              <img src="./img/staff/7.jpg" class="fullHeight" alt="">
             </div>
           </div>
           <div class="w50 fullHeight flexCol">
-
+            <p>Nae'Ahmi and Young Ty performing</p>
           </div>
 
         </div>
