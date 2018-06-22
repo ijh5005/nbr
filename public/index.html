@@ -217,6 +217,10 @@
           </div>
 
           <div id="staffPageRightSide" class="fullHeight w50">
+            <video class="staffPageRightSideVideo" style="position: relative; left: 2em;" align='center' width="600" controls>
+              <source src="./img/newartist.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             <div class="staffPageImg flexRow" class="h80" ng-repeat='staff in staffImgs track by $index'>
               <img class="" src={{staff}} alt="">
             </div>

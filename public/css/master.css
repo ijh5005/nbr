@@ -60,16 +60,16 @@ body {
 }
 
 #navigation p {
+  color: #000;
   font-size: 1em;
   font-weight: 500;
   margin: 0 2em;
-  color: #000;
 }
 
 #navigation p.active {
   background-color: #870012;
-  padding: 0.2em 1.2em;
   color: #fff;
+  padding: 0.2em 1.2em;
 }
 
 /* <!-- HOME PAGE --> */
@@ -123,8 +123,8 @@ body {
 }
 
 #homeIntroImg p {
-  font-weight: 300;
   color: #000;
+  font-weight: 300;
   margin: 0;
 }
 
@@ -133,21 +133,21 @@ body {
 }
 
 #homeIntro > div > p#mission {
-  font-weight: 300;
-  font-size: 1.4em;
   color: #000;
+  font-size: 1.4em;
+  font-weight: 300;
   width: 11em;
 }
 
 #homeIntro > p {
-  width: 30em;
   font-size: 1.4em;
   font-weight: 300;
+  width: 30em;
 }
 
 #featuredArtist {
-  width: 76vw;
   position: relative;
+  width: 76vw;
 }
 
 .featuredArtist {
@@ -168,26 +168,26 @@ body {
 
 #migh,
 #ty {
-  top: 0;
   font-size: 22em;
-  position: absolute;
   justify-content: flex-end;
   perspective: 8em;
+  position: absolute;
+  top: 0;
 }
 
 #ty {
-  left: 0;
   justify-content: flex-start;
+  left: 0;
 }
 
 #migh p,
 #ty p  {
+  color: #000;
+  font-style: italic;
+  left: 0.07em;
   position: relative;
   top: -3px;
-  left: 0.07em;
-  color: #000;
   transform: rotateY(-45deg);
-  font-style: italic;
 }
 
 #ty p {
@@ -201,9 +201,9 @@ body {
 } */
 
 #playList {
-  width: 50em;
   position: absolute;
   right: 0;
+  width: 50em;
 }
 
 #playlistHolder {
@@ -219,10 +219,10 @@ body {
 
 #playBtnHolder {
   height: 16em;
-  position: relative;
-  width: 16em;
   left: 8em;
+  position: relative;
   top: 2em;
+  width: 16em;
 }
 
 #playBtnOutterCircle {
@@ -312,8 +312,8 @@ body {
 }
 
 .track {
-  color: #000;
   background-color: rgba(255, 255, 255, 0.2);
+  color: #000;
   margin: 1.2em 0;
   position: relative;
   text-align: center;
@@ -398,10 +398,10 @@ body {
 }
 
 #artistImg p {
-  position: absolute;
-  top: -20%;
   color: var(--darkRed);
   font-size: 2em;
+  position: absolute;
+  top: -20%;
 }
 
 .artistSection {
@@ -445,16 +445,16 @@ body {
 }
 
 #artistBioSectionName {
-  margin: 0;
   font-size: 2em;
+  margin: 0;
   margin-top: 0;
 }
 
 #artistBioP {
-  overflow: scroll;
   font-size: 0.9em;
   line-height: 2em;
   margin: 0;
+  overflow: scroll;
   text-align: center;
 }
 
@@ -493,8 +493,8 @@ body {
 
 /* <!-- STAFF PAGE --> */
 #staffPageTitle p {
-  font-weight: 300;
   font-size: 2em;
+  font-weight: 300;
 }
 
 #staffPage {
@@ -520,17 +520,22 @@ body {
     background: #000
 }​
 
+.staffPageRightSideVideo {
+  left: 2em;
+  position: relative;
+}
+
 #staffPageSection {
 }
 
 #staffPageSectionName p {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #000;
   font-size: 1.4em;
   font-weight: 300;
-  color: #000;
+  margin-bottom: 0;
   /* border-bottom: 0.01em solid var(--darkRed); */
   padding: 0.4em;
-  margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .staffDescription {
@@ -543,8 +548,8 @@ body {
 }
 
 .staffDescription > *:first-child p {
-  margin: 0;
   font-size: 1em;
+  margin: 0;
 }
 
 .staffDescriptionActive {
@@ -558,8 +563,8 @@ body {
 
 .staffPageImg {
   height: 28em;
-  overflow: hidden;
   margin: 1em auto;
+  overflow: hidden;
   text-align: center;
 }
 
@@ -572,8 +577,8 @@ body {
 /* <!-- SERVICES PAGE --> && <!-- CONTACT --> */
 #servicesPageLeftSide,
 #contactPageRightSide {
-  background-color: var(--darkRed);
   background: radial-gradient(#D1001B, #870012);
+  background-color: var(--darkRed);
   position: relative;
   transition: top 1s;
 }
@@ -586,8 +591,8 @@ body {
 }
 
 #servicesPageLeftSide img {
-  height: 6em;
   background-color: rgba(255, 255, 255, 1);
+  height: 6em;
   padding: 1em 12em;
 }
 
@@ -648,9 +653,9 @@ body {
 
 /* <!-- EVENT PAGE --> */
 #flyer {
+  color: #FFF;
   height: 40em;
   width: 30em;
-  color: #FFF;
 }
 
 #eventsPageImg {
